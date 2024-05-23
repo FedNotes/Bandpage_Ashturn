@@ -4,45 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashturn</title>
-	<meta name="description" content="Welcome to Ashturn.">
+    <meta name="description" content="Welcome to Ashturn.">
     <meta name="keywords" content="Ashturn, Belgian metal, belgium, metal, metalcore, hardcore, Spotify, Facebook, Instagram, YouTube, MySpreadshop">
     <meta name="author" content="FedNotes">
     <meta name="robots" content="index, follow">
     <style>
         body {
             margin: 0;
-            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
         }
         .logo {
             max-width: 600px; /* Adjust the size as needed */
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
         .logos {
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
         .logos img {
             width: 50px;
             height: 50px;
             margin: 0 10px;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px; /* Adds rounded corners to the gallery items */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            border-radius: 15px; /* Ensures the images inside have rounded corners */
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <img src="images/ashturn.jpg" alt="Ashturn Logo" class="logo">
+    <img src="images/album.jpg" alt="Ashturn Logo" class="logo">
     <div class="logos">
         <a href="https://www.facebook.com/ashturntheband/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-		<a href="https://open.spotify.com/artist/6GJUu0BdbqLYRCs5Z6Srgv?si=Agw1xOetS6qYbmgtyTUH_g" target="_blank"><img src="images/spotify.png" alt="Spotify"></a>
+        <a href="https://open.spotify.com/artist/6GJUu0BdbqLYRCs5Z6Srgv?si=Agw1xOetS6qYbmgtyTUH_g" target="_blank"><img src="images/spotify.png" alt="Spotify"></a>
         <a href="https://www.instagram.com/ashturntheband/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
         <a href="https://www.youtube.com/@Ashturnmusic" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
         <a href="https://ashturn.myspreadshop.be/all" target="_blank"><img src="images/myspreadshop.png" alt="MySpreadshop"></a>
     </div>
+    <div class="gallery">
+        
+        <div class="gallery-item">
+            <img src="gallery/raf.jpg" alt="Raf">
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/mark.jpg" alt="Mark">
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/dennis.jpg" alt="Dennis">
+        </div>
+		<div class="gallery-item">
+            <img src="gallery/tom.jpg" alt="Tom">
+        </div>
+		<div class="gallery-item">
+            <img src="gallery/steve.jpg" alt="Steve">
+        </div>
+        <!-- Voeg hier meer foto's toe -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Ashturn. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-

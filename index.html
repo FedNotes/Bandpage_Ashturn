@@ -19,14 +19,12 @@
             font-family: Arial, sans-serif;
         }
         .logo {
-            max-width: 600px; /* Adjust the size as needed */
+            max-width: 600px; 
             margin-top: 20px;
-        }
-		.logo {
-			overflow: hidden;
+            overflow: hidden;
             border-radius: 15px; 
-		}	
-		.logos {
+        }
+        .logos {
             display: flex;
             justify-content: center;
             margin-top: 20px;
@@ -36,10 +34,9 @@
             height: 50px;
             margin: 0 10px;
         }
-		.logos img:hover {
+        .logos img:hover {
             transform: scale(1.1);
-		}
-		
+        }
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -51,14 +48,14 @@
         }
         .gallery-item {
             overflow: hidden;
-            border-radius: 15px; /* Adds rounded corners to the gallery items */
+            border-radius: 15px;
         }
         .gallery-item img {
             width: 100%;
             height: auto;
             display: block;
             transition: transform 0.3s ease;
-            border-radius: 15px; /* Ensures the images inside have rounded corners */
+            border-radius: 15px;
         }
         .gallery-item img:hover {
             transform: scale(1.2);
@@ -70,45 +67,71 @@
             padding: 1rem;
             width: 100%;
         }
-		
-		
+        /* Nieuwe layout voor Biography + Showdates */
+        .bio-show-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+        }
+        .bio-show-container > div {
+            flex: 1;
+        }
+        h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
     </style>
-	 <script>
-       
-    </script>
 </head>
 <body><br><br>
-<div class="logo">
-    <img src="images/album.jpg" alt="Ashturn Logo" class="logo">
-	</div>
+    <div class="logo">
+        <img src="images/album.jpg" alt="Ashturn Logo" class="logo">
+    </div>
     <div class="logos">
         <a href="https://www.facebook.com/ashturntheband/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
         <a href="https://open.spotify.com/artist/6GJUu0BdbqLYRCs5Z6Srgv?si=Agw1xOetS6qYbmgtyTUH_g" target="_blank"><img src="images/spotify.png" alt="Spotify"></a>
         <a href="https://www.instagram.com/ashturntheband/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
         <a href="https://www.youtube.com/@Ashturnmusic" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
         <a href="https://ashturn.myspreadshop.be/all" target="_blank"><img src="images/myspreadshop.png" alt="MySpreadshop"></a>
-		<a href="mailto:info@ashturn.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        <a href="mailto:info@ashturn.com" target="_blank"><img src="images/email.png" alt="Email"></a>
     </div>
-	
-	<div id="biography-section">
-        <h2>Biography</h2>
-        <div id="biography-text">
-            <p>Ashturn is a metal/hardcore band from Bunsbeek - Belgium founded in 2003.<br>
-			We see ourselves as "Five guys making metal music".<br><br>
 
+    <!-- Nieuwe container met Biography en Showdates -->
+    <div class="bio-show-container">
+        <div id="biography-section">
+            <h2>Biography</h2>
+            <div id="biography-text">
+                <p>Ashturn is a metal/hardcore band from Bunsbeek - Belgium founded in 2003.<br>
+                We see ourselves as "Five guys making metal music".<br><br>
 
-<b>Ashturn</b> is:<br>
-Raf (Vocals)<br>
-Mark (Guitar)<br>
-Dennis (Guitar)<br>
-Tom (Bass)<br>
-Steve (Drums)<br>
-</p>
+                <b>Ashturn</b> is:<br>
+                Raf (Vocals)<br>
+                Mark (Guitar)<br>
+                Dennis (Guitar)<br>
+                Tom (Bass)<br>
+                Steve (Drums)<br>
+                </p>
+            </div>
+        </div>
+
+        <div id="showdates-section">
+            <h2>Showdates</h2>
+            <div id="showdates-text">
+                <p><b>Upcoming Shows:</b></p>
+                <ul>
+                    <li>20 September 2025 – Bastards Feestival, Nederweert - NL</li>
+                    <li>25 Oktober 2025 – Hippodrome, Tongeren - BE</li>
+                    <li>20 December 2025 – Café Pumpkeskal, Tongeren - BE</li>
+                </ul>
+            </div>
         </div>
     </div>
-	
+
     <div class="gallery">
-        
         <div class="gallery-item">
             <img src="gallery/publish/raf.jpg" alt="Raf">
         </div>
@@ -118,19 +141,18 @@ Steve (Drums)<br>
         <div class="gallery-item">
             <img src="gallery/publish/dennis.jpg" alt="Dennis">
         </div>
-		<div class="gallery-item">
+        <div class="gallery-item">
             <img src="gallery/publish/tom.jpg" alt="Tom">
         </div>
-		<div class="gallery-item">
+        <div class="gallery-item">
             <img src="gallery/publish/steve.jpg" alt="Steve">
         </div>
-        <!-- Voeg hier meer foto's toe -->
-    </div>
-	<br><br>
+    </div><br><br>
+
     <footer>
         <p>&copy; 2024 Ashturn. All rights reserved.<br><br>
-		Contact us: info@ashturn.com
-		</p>
+        Contact us: info@ashturn.com
+        </p>
     </footer>
 </body>
 </html>
